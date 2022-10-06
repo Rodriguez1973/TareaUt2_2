@@ -14,7 +14,7 @@ cerrar_navegador.onclick = function () {
 function realizarConversion(evento) {
   //Solo tiene en cuenta para la conversion las teclas de las letras.
   //console.log(evento.keyCode) //Depuracion. Imprime el código de la tecla en consola.
-  //Filtra las teclass que son válidas.
+  //Filtra las teclas que son válidas.
   if ((evento.keyCode >= 65 && evento.keyCode <= 90) || evento.keyCode == 192) {
     let cadena = cadena_procesar.value
     //Si la cadena tiene caracteres.
