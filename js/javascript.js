@@ -14,7 +14,7 @@ cerrar_navegador.onclick = function () {
 function realizarConversion(evento) {
   //Solo tiene en cuenta para la conversion las teclas de las letras.
   console.log(evento.keyCode) //Imprime el código de la tecla en consola.
-  
+  //Filtra las teclass que son válidas.
   if ((evento.keyCode >= 65 && evento.keyCode <= 90) || evento.keyCode == 192) {
     let cadena = cadena_procesar.value
     //Si la cadena tiene caracteres.
@@ -22,7 +22,7 @@ function realizarConversion(evento) {
       //Código UNICODE del caracter.
       let codigo_caracter = cadena.charCodeAt(cadena.length - 1)
       let caracter = cadena.charAt(cadena.length - 1)
-      console.log(evento.keyCode+" "+codigo_caracter+" "+caracter);
+      console.log(evento.keyCode+" "+codigo_caracter+" "+caracter); //Ayuda a la depuración.
       //Muestras la información generada.
       mostrarInformacion(codigo_caracter, caracter, evento)
       caracter = String.fromCharCode(parseInt('0x' + codigo_caracter + 'e8'))
