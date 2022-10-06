@@ -1,0 +1,1 @@
+El presente código presenta un problema. Al introducir los caracteres demasiado rápido se contamina la entrada. No se ha resuelto pués no era el objetivo del ejercicio y me faltan conocimientos del lenguaje para poder afrontar el problema.

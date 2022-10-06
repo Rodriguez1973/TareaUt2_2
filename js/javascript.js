@@ -12,9 +12,11 @@ cerrar_navegador.onclick = function () {
 
 /*Función que realiza la conversión del caracter al idiograma chino en la cadena.*/
 function realizarConversion(evento) {
-  //Solo tiene en cuenta para la conversion las teclas de las letras.
+  
   //console.log(evento.keyCode) //Depuracion. Imprime el código de la tecla en consola.
+  
   //Filtra las teclas que son válidas.
+  //Solo tiene en cuenta para la conversion las teclas de las letras y son de las que muestra su información.
   if ((evento.keyCode >= 65 && evento.keyCode <= 90) || evento.keyCode == 192) {
     let cadena = cadena_procesar.value
     //Si la cadena tiene caracteres.
